@@ -1,0 +1,42 @@
+{
+  "name": "brain-games-Magzhan",
+  "version": "1.0.0",
+  "bin": {
+   "brain-games": "dist/bin/brain-games.js"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "dist"
+  ],
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enceladus181/project-lvl1-s474.git"
+  },
+  "author": "Magzhan Sydykov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enceladus181/project-lvl1-s474/issues"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "homepage": "https://github.com/enceladus181/project-lvl1-s474#readme",
+  "dependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
+}
