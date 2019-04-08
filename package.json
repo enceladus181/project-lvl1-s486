@@ -2,7 +2,7 @@
   "name": "brain-games-Magzhan",
   "version": "1.0.0",
   "bin": {
-   "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js"
   },
   "engines": {
     "node": ">=8"
@@ -38,5 +38,12 @@
   },
   "devDependencies": {
     "cross-env": "^5.2.0"
-  }
+  },
+  "keywords": [
+    "brain",
+    "brain-games",
+    "games",
+    "hexlet",
+    "magzhan"
+  ]
 }
