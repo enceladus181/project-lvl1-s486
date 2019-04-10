@@ -1,10 +1,10 @@
 {
-  "name": "@magzhan/project-lvl1-s474-brgms",
+  "name": "project-magzhan-brgms",
   "version": "1.0.0",
   "description": "This is a Brain-Games project from Hexlet April 2019",
   "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "build": "cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
   "files": [
