@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { name } from '..';
-
+import sqrOfNum from '..';
 console.log('Welcome to the Brain Games!');
-
-name();
+sqrOfNum();

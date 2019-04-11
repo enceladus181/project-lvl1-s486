@@ -1,6 +1,9 @@
-import readlineSync from 'readline-sync';
+//import readlineSync from 'readline-sync';
 
-export const name = readlineSync.question('May I have your name? ');
-console.log('Hello, ' + name + '!');
+//const name = readlineSync.question('May I have your name? ');
+//console.log('Hello, ' + name + '!');
 
-
+const num = 25;
+const sqrOf = (n) => n * n;
+const sqrOfNum = sqrOf(num);
+export default sqrOfNum;
