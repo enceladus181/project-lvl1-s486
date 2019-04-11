@@ -1,3 +1,4 @@
 # project-lvl1-s474
-"!https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability!":https://codeclimate.com/github/codeclimate/codeclimate/maintainability
-"!https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage!":https://codeclimate.com/github/codeclimate/codeclimate/test_coverage
+<a href="https://codeclimate.com/github/enceladus181/project-lvl1-s474/maintainability"><img src="https://api.codeclimate.com/v1/badges/5c20b78c9a7bc72b258a/maintainability" /></a>
+
+<a href="https://codeclimate.com/github/enceladus181/project-lvl1-s474/test_coverage"><img src="https://api.codeclimate.com/v1/badges/5c20b78c9a7bc72b258a/test_coverage" /></a>
