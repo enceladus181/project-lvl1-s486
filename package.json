@@ -11,6 +11,12 @@
     "build": "cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
+  "keywords": [
+    "brain",
+    "magzhan",
+    "braingames",
+    "hexlet"
+  ],
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
