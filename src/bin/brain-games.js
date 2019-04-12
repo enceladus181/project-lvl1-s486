@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import name from '..';
+import sayHi from '..';
 
-console.log(name());
+sayHi();
