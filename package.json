@@ -1,6 +1,6 @@
 {
   "name": "project-magzhan-brgms",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "description": "This a brain-games project from Hexlet",
   "main": "index.js",
   "files": [
