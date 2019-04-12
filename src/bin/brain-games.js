@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import name from '../index';
+import name from '..';
 
 console.log(name());
