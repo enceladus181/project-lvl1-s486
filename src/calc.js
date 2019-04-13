@@ -1,33 +1,57 @@
-import { cons, car, cdr, toString } from 'hexlet-pairs';
+import { cons, car, cdr, } from 'hexlet-pairs';
 
+// toString
 import {
   getPlayerName,
   getPlayerAnswer,
   getRandomNumber,
-  numOfTries,
+  // numOfTries,
   taskExplainCalc,
 } from '.';
 
+const triplet = cons(getRandomNumber(), cons(getRandomNumber(), getRandomNumber()));
 
-export default calc = () => {
+const getRightAnswerCalc = () => {
+	let rightAnswerCalc;
+	if (car(cdr(triplet)) <= 7) {
+		rightAnswerCalc = car(triplet) * cdr(cdr(triplet));
+	} else if (car(cdr(triplet)) <= 14) {
+		rightAnswerCalc = car(triplet) + cdr(cdr(triplet));
+	} else {
+		rightAnswerCalc = car(triplet) - cdr(cdr(triplet));
+	}
+	return rightAnswerCalc;
+};
+
+const getMathSymbol = () => {
+  let mathSymbol;
+  if (car(cdr(triplet)) <= 7) {
+    mathSymbol = '*';
+  } else if (car(cdr(triplet)) <= 14) {
+    mathSymbol = '+';
+  } else {
+    mathSymbol = '-';
+  }
+  return mathSymbol;
+};
+
+const calc = () => {
   taskExplainCalc();
   getPlayerName();
-  for (let i = 1; i <= numOfTries; i += 1) {
-    console.log();
-  }
-  
-
-	const getRightAnswerCalc = () => {
-		let rightAnswerCalc;
-		const triplet = cons(getRandomNumber(), cons(getRandomNumber(), getRandomNumber()));
-			if (car(cdr(triplet)) <= 7) {
-			rightAnswerCalc = car(triplet) * cdr(cdr(triplet));
-		} else if (car(cdr(triplet)) <= 14) {
-			rightAnswerCalc = car(triplet) + cdr(cdr(triplet));
-		} else {
-			rightAnswerCalc = car(triplet) - cdr(cdr(triplet));
-		}
-			console.log(`Question: ${car(triplet)} ${car(cdr(triplet))} ${cdr(cdr(triplet))}`);
-			return rightAnswerCalc;
-		};
+  // for (let i = 1; i <= numOfTries; i += 1) {
+    console.log(`Question: ${car(triplet)} ${getMathSymbol} ${cdr(cdr(triplet))}`);
+    if (getPlayerAnswer == getRightAnswerCalc) {
+      console.log('Correct!');
+    } else {
+      console.log(`'${getPlayerAnswer}' is wrong answer ;(, Correct answer was 
+      	'${getRightAnswerCalc}'.`);
+      console.log(`Let's try again, ${getPlayerName}!`);
+      // break;
+    }
+	// if (i === 3) {
+ //      console.log(`Congratulations, ${getPlayerName}!`);	
+    // }
+  // }
 };
+
+export default calc;
