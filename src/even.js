@@ -1,25 +1,36 @@
 import readlineSync from 'readline-sync';
 
-import sayHi, { name } from '.';
+import sayHi from '.';
 
-console.log('Answer "yes" if number is even otherwise answer "no".');
+const taskExplain = () => console.log('Answer "yes" if number is even; otherwise, answer "no".');
+
 const even = () => {
-	let num = Math.round(Math.random() * 20);
 	let rightAnswer;
-	const playerName = name;
-	sayHi();
-	if (num % 2 === 0) {
-		rightAnswer = 'yes';
-	}
-	rightAnswer = 'no';
+	taskExplain();
+	const playerName = sayHi();
+	let num;
 
-	console.log(`Question: ${num}`);
-	const playerAnswer = readlineSync.question('Your answer: ');
-	if (playerAnswer == rightAnswer) {
-		console.log('Correct!');
-	} else {
-		console.log(`${playerAnswer} is wrong answer ;(, Correct answer was ${rightAnswer}.`);
-		console.log(`Let's try again, ${playerName}!`);
+	for (let i = 1; i <= 3; i += 1) {
+		num = Math.round(Math.random() * 20);
+		if (num % 2 === 0) {
+			rightAnswer = 'yes';
+		} else {
+			rightAnswer = 'no';
+		}
+
+		console.log(`Question: ${num}`);
+		
+		const playerAnswer = readlineSync.question('Your answer: ');
+		if (playerAnswer == rightAnswer) {
+			console.log('Correct!');
+		} else {
+			console.log(`'${playerAnswer}' is wrong answer ;(, Correct answer was '${rightAnswer}'.`);
+			console.log(`Let's try again, ${playerName}!`);
+			break;
+		}
+		if (i === 3) {
+			console.log(`Congratulations, ${playerName}!`);	
+		}
 	}
 };
 
