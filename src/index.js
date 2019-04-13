@@ -1,10 +1,19 @@
-import readlineSync from 'readline-sync';
+import { 
+  getPlayerName,
+  getPlayerAnswer,
+  taskExplainEven,
+  getRandomNumber,
+  numOfTries,
+  taskExplainCalc,
+  getRightAnswerEven
+} from './apiMagzhan';
 
-console.log('Welcome to the Brain Games!');
-const sayHi = () => {
-	const name = readlineSync.question('May I have your name? ');
-	console.log(`Hello,  ${name}!`);
-	return name;
-}; 
-
-export default sayHi;
+export {
+  getPlayerName,
+  getPlayerAnswer,
+  taskExplainEven,
+  getRandomNumber,
+  numOfTries,
+  taskExplainCalc,
+  getRightAnswerEven
+};
