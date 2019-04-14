@@ -1,4 +1,4 @@
-import { getPlayerName, getPlayerAnswer, getRandomNumber, } from '.';
+import { getPlayerName, getPlayerAnswer, getRandomNumber } from '.';
 
 const engine = (version) => {
   const playerName = getPlayerName();
@@ -19,6 +19,18 @@ const engine = (version) => {
       };
       question = randomNumber;
       rightAnswer = isEvenOrOdd();
+    } else if (version === 2) {
+      const getRandomOperator = (arr) => Math.floor(Math.random() * arr.length);
+      const operand1 = getRandomNumber();
+      const operand2 = getRandomNumber();
+      const operators = ['-', '+', '*'];
+      const operator = getRandomOperator(operators);
+      const expressions = [operand1 - operand2,
+													operand1 + operand2,
+													operand1 * operand2];
+
+      question = `${operand1} ${operators[operator]} ${operand2}`;
+      rightAnswer = expressions[operator];
     }
 
     console.log(`Question: ${question}`);
@@ -35,5 +47,4 @@ const engine = (version) => {
     }
   }
 };
-
 export default engine;

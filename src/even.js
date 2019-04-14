@@ -1,9 +1,9 @@
 import engine from './engine';
 
 const even = () => {
-  const brainEven = 1; 
+  const gameIndex = 1; 
   console.log('Answer "yes" if number is even; otherwise, answer "no".');
-  engine(brainEven);
+  engine(gameIndex);
 };
 
 export default even;

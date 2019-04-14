@@ -1,7 +1,7 @@
 import { 
   getPlayerName,
   getPlayerAnswer,
-  getRandomNumber,
+  getRandomNumber
 } from './apiMagzhan';
 
 console.log('Welcome to the Brain Games!');
@@ -9,5 +9,5 @@ console.log('Welcome to the Brain Games!');
 export {
   getPlayerName,
   getPlayerAnswer,
-  getRandomNumber,
+  getRandomNumber
 };
