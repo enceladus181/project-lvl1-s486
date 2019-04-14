@@ -1,12 +1,12 @@
 import { getPlayerName, getPlayerAnswer, getRandomNumber } from '.';
 
-const engine = (version) => {
+const engine = (gameName) => {
   const playerName = getPlayerName();
   const numOfTries = 3;
   let rightAnswer;
   let question;
   for (let i = 1; i <= numOfTries; i += 1) {
-    if (version === 1) {
+    if (gameName === 1) {
       const randomNumber = getRandomNumber();
       const isEvenOrOdd = () => {
         let yesOrNo;
@@ -19,7 +19,7 @@ const engine = (version) => {
       };
       question = randomNumber;
       rightAnswer = isEvenOrOdd();
-    } else if (version === 2) {
+    } else if (gameName === 2) {
       const getRandomOperator = (arr) => Math.floor(Math.random() * arr.length);
       const operand1 = getRandomNumber();
       const operand2 = getRandomNumber();
@@ -31,7 +31,19 @@ const engine = (version) => {
 
       question = `${operand1} ${operators[operator]} ${operand2}`;
       rightAnswer = expressions[operator];
+    } else if (gameName === 3) {
+      const getGcdOfTwoNumbers = (a, b) => {
+        if (!b) {
+         return a;
+        }
+       return getGcdOfTwoNumbers(b, a % b);
+      };
+      let operand1 = getRandomNumber();
+      let operand2 = getRandomNumber();
+      question = `${getRandomNumber()} ${getRandomNumber()}`;
+      rightAnswer = getGcdOfTwoNumbers(operand1, operand2);
     }
+/*==================================================================================*/
 
     console.log(`Question: ${question}`);
     const playerAnswer = getPlayerAnswer();
