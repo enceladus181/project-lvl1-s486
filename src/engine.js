@@ -38,9 +38,9 @@ const engine = (gameName) => {
         }
        return getGcdOfTwoNumbers(b, a % b);
       };
-      let operand1 = getRandomNumber();
-      let operand2 = getRandomNumber();
-      question = `${getRandomNumber()} ${getRandomNumber()}`;
+      const operand1 = getRandomNumber();
+      const operand2 = getRandomNumber();
+      question = `${operand1} ${operand2}`;
       rightAnswer = getGcdOfTwoNumbers(operand1, operand2);
     }
 /*==================================================================================*/
