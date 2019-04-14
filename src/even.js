@@ -1,30 +1,9 @@
-import {
-  getRandomNumber,
-  numOfTries,
-  getPlayerName,
-  getPlayerAnswer,
-  getRightAnswerEven,
-  taskExplainEven as taskExplain
-} from '.';
+import engine from './engine';
 
 const even = () => {
-  taskExplain();
-  getPlayerName();
-
-  for (let i = 1; i <= numOfTries; i += 1) {
-    console.log(`Question: ${getRandomNumber()}`);
-    if (getPlayerAnswer == getRightAnswerEven) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${getPlayerAnswer}' is wrong answer ;(, Correct answer was 
-      	'${getRightAnswerEven}'.`);
-      console.log(`Let's try again, ${getPlayerName}!`);
-      break;
-    }
-	if (i === 3) {
-      console.log(`Congratulations, ${getPlayerName}!`);	
-    }
-  }
+  const brainEven = 1; 
+  console.log('Answer "yes" if number is even; otherwise, answer "no".');
+  engine(brainEven);
 };
 
 export default even;

@@ -1,19 +1,13 @@
 import { 
   getPlayerName,
   getPlayerAnswer,
-  taskExplainEven,
   getRandomNumber,
-  numOfTries,
-  taskExplainCalc,
-  getRightAnswerEven
 } from './apiMagzhan';
+
+console.log('Welcome to the Brain Games!');
 
 export {
   getPlayerName,
   getPlayerAnswer,
-  taskExplainEven,
   getRandomNumber,
-  numOfTries,
-  taskExplainCalc,
-  getRightAnswerEven
 };
