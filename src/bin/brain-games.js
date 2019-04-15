@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { getPlayerName } from '../apiMagzhan';
+import { getPlayerName } from '../apiBrGms';
 
 getPlayerName();

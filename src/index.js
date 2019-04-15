@@ -2,7 +2,7 @@ import {
   getPlayerName,
   getPlayerAnswer,
   getRandomNumber
-} from './apiMagzhan';
+} from './apiBrGms';
 
 console.log('Welcome to the Brain Games!');
 
