@@ -1,5 +1,5 @@
-# project-lvl1-s474
-<a href="https://codeclimate.com/github/enceladus181/project-lvl1-s474/maintainability"><img src="https://api.codeclimate.com/v1/badges/5c20b78c9a7bc72b258a/maintainability" /></a>
+# project-lvl1-s486
+<a href="https://codeclimate.com/github/enceladus181/project-lvl1-s486/maintainability"><img src="https://api.codeclimate.com/v1/badges/596274f8582850e006b7/maintainability" /></a>
 
 [![Build Status](https://travis-ci.com/enceladus181/project-lvl1-s486.svg?branch=master)](https://travis-ci.com/enceladus181/project-lvl1-s486)
 
