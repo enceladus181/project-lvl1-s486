@@ -3,7 +3,7 @@ import { getRandomNumber } from './apiBrGms';
 
 const gcdGame = () => {
 	const taskExplanationMessage = 'Find the greatest common divisor of given numbers.';
-	const generateGcdGame = () => {
+	const generateGame = () => {
 		const getGcdOfTwoNumbers = (a, b) => {
 			if (!b) {
 				return a;
@@ -18,7 +18,7 @@ const gcdGame = () => {
 		return { question, rightAnswer };
 	};
 	
-	engine(taskExplanationMessage, generateGcdGame);
+	engine(taskExplanationMessage, generateGame);
 };
 
 export default gcdGame();

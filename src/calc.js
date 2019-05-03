@@ -17,7 +17,7 @@ const calcGame = () => {
     return { question, rightAnswer };
   };
 
-  return engine(taskExplanationMessage, generateCalcGame);
+  return engine(taskExplanationMessage, generateGame);
 };
 
 export default calcGame();
