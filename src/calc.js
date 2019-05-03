@@ -3,7 +3,7 @@ import { getRandomNumber } from './apiBrGms';
 
 const taskExplanationMessage = 'What is the result of the expression?';
 const calcGame = () => {
-  const generateCalcGame = () => {
+  const generateGame = () => {
     const operand1 = getRandomNumber();
     const operand2 = getRandomNumber();
     const operators = ['-', '+', '*'];
