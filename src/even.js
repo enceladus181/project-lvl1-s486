@@ -11,15 +11,17 @@ const evenGame = () => {
       } else {
         yesOrNo = 'no';
       }
+
         return yesOrNo;
     };
     const randomNumber = getRandomNumber();
     const question = randomNumber;
     const rightAnswer = isEvenOrOdd(randomNumber);
+
     return { question, rightAnswer };
   };
 
-  return engine(taskExplanationMessage, generateGame);
+  return engine(taskExplanationMessage, { generateGame });
 };
 
 export default evenGame();

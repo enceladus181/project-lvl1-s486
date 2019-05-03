@@ -14,10 +14,11 @@ const calcGame = () => {
                         operand1 * operand2];
     const question = `${operand1} ${operators[operator]} ${operand2}`;
     const rightAnswer = expressions[operator];
+    
     return { question, rightAnswer };
   };
 
-  return engine(taskExplanationMessage, generateGame);
+  return engine(taskExplanationMessage, { generateGame });
 };
 
 export default calcGame();

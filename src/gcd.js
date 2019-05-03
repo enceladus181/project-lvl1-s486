@@ -8,6 +8,7 @@ const gcdGame = () => {
 			if (!b) {
 				return a;
 			}
+
 			return getGcdOfTwoNumbers(b, a % b);
 		};
 	
@@ -15,10 +16,11 @@ const gcdGame = () => {
 		const operand2 = getRandomNumber();
 		const question = `${operand1} ${operand2}`;
 		const rightAnswer = getGcdOfTwoNumbers(operand1, operand2);
+
 		return { question, rightAnswer };
 	};
 	
-	engine(taskExplanationMessage, generateGame);
+	engine(taskExplanationMessage, { generateGame });
 };
 
 export default gcdGame();
