@@ -10,3 +10,5 @@
 <a href="https://asciinema.org/a/CrImWJY4OyGFxHiLW6sjM2FFS">asciinema brain-progression</a>
 
 <a href="https://asciinema.org/a/FUmktJ5Mzw6GMoai0TIulBraM">asciinema brain-prime</a>
+
+<a href="https://asciinema.org/a/TRDzb0otjOBpk8Vy9a1ECXzBa">asciinema brain-gcd</a>
