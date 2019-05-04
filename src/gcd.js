@@ -23,4 +23,4 @@ const gcdGame = () => {
 	engine(taskExplanationMessage, { generateGame });
 };
 
-export default gcdGame();
+export default gcdGame;

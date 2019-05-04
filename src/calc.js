@@ -21,4 +21,4 @@ const calcGame = () => {
   return engine(taskExplanationMessage, { generateGame });
 };
 
-export default calcGame();
+export default calcGame;

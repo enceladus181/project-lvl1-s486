@@ -24,4 +24,4 @@ const evenGame = () => {
   return engine(taskExplanationMessage, { generateGame });
 };
 
-export default evenGame();
+export default evenGame;

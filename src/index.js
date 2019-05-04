@@ -16,7 +16,7 @@ const engine = (taskExplanationMessage, gameData) => {
     console.log(`Question: ${question}`);
     const playerAnswer = getPlayerAnswer();
 
-    if (playerAnswer == rightAnswer()) {
+    if (playerAnswer == rightAnswer) {
       console.log('Correct!');
     } else {
       console.log(`'${playerAnswer}' is wrong answer ;(, Correct answer was '${rightAnswer}'.`);
