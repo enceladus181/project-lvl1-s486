@@ -8,3 +8,5 @@
 <a href="https://asciinema.org/a/DWP7RsHLLFC8pN8TzgkhRPKBK">asciinema brain-calc</a>
 
 <a href="https://asciinema.org/a/CrImWJY4OyGFxHiLW6sjM2FFS">asciinema brain-progression</a>
+
+<a href="https://asciinema.org/a/FUmktJ5Mzw6GMoai0TIulBraM">asciinema brain-prime</a>
