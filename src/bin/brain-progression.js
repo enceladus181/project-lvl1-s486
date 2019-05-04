@@ -2,4 +2,3 @@
 import progression from '../progression';
 
 progression();
-
