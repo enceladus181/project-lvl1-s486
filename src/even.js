@@ -14,7 +14,7 @@ const evenGame = () => {
 
         return yesOrNo;
     };
-    const randomNumber = getRandomNumber();
+    const randomNumber = getRandomNumber(0, 21);
     const question = randomNumber;
     const rightAnswer = isEvenOrOdd(randomNumber);
 

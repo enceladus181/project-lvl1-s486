@@ -11,4 +11,4 @@ export const getPlayerAnswer = () => {
   return answer;
 };
 
-export const getRandomNumber = () => Math.floor(Math.random() * 20);
+export const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min)) + min;

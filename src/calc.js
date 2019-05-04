@@ -4,8 +4,8 @@ import { getRandomNumber } from './apiBrGms';
 const taskExplanationMessage = 'What is the result of the expression?';
 const calcGame = () => {
   const generateGame = () => {
-    const operand1 = getRandomNumber();
-    const operand2 = getRandomNumber();
+    const operand1 = getRandomNumber(0, 21);
+    const operand2 = getRandomNumber(0, 21);
     const operators = ['-', '+', '*'];
     const getRandomOperator = (arr) => Math.floor(Math.random() * arr.length);
     const operator = getRandomOperator(operators);

@@ -12,15 +12,15 @@ const gcdGame = () => {
 			return getGcdOfTwoNumbers(b, a % b);
 		};
 	
-		const operand1 = getRandomNumber();
-		const operand2 = getRandomNumber();
+		const operand1 = getRandomNumber(0, 21);
+		const operand2 = getRandomNumber(0, 21);
 		const question = `${operand1} ${operand2}`;
 		const rightAnswer = getGcdOfTwoNumbers(operand1, operand2);
 
 		return { question, rightAnswer };
 	};
 	
-	engine(taskExplanationMessage, { generateGame });
+	return engine(taskExplanationMessage, { generateGame });
 };
 
 export default gcdGame;
