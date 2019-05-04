@@ -12,3 +12,5 @@
 <a href="https://asciinema.org/a/FUmktJ5Mzw6GMoai0TIulBraM">asciinema brain-prime</a>
 
 <a href="https://asciinema.org/a/TRDzb0otjOBpk8Vy9a1ECXzBa">asciinema brain-gcd</a>
+
+<a href="https://asciinema.org/a/OpeqIIPl71UgDn1FHPWqt7LKl">asciinama of installation of brain-games (whole project)</a>
