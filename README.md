@@ -6,3 +6,5 @@
 <a href="https://asciinema.org/a/fJhcs7MefCaXDD9VtSjSAt4Pe">asciinema brain-even</a>
 
 <a href="https://asciinema.org/a/DWP7RsHLLFC8pN8TzgkhRPKBK">asciinema brain-calc</a>
+
+<a href="https://asciinema.org/a/CrImWJY4OyGFxHiLW6sjM2FFS">asciinema brain-progression</a>
