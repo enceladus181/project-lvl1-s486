@@ -9,9 +9,9 @@ const engine = (taskExplanationMessage, gameData) => {
   console.log(taskExplanationMessage);
   const playerName = getPlayerName();
   const numOfTries = 3;
-  let counter = 1;
+  let currentTry = 1;
 
-  for (; counter <= numOfTries; counter += 1) {
+  for (; currentTry <= numOfTries; currentTry += 1) {
 		const { question, rightAnswer } = gameData.generateGame();
     console.log(`Question: ${question}`);
     const playerAnswer = getPlayerAnswer();
@@ -23,7 +23,7 @@ const engine = (taskExplanationMessage, gameData) => {
       console.log(`Let's try again, ${playerName}!`);
       break;
     }
-    if (counter === 3) {
+    if (currentTry === 3) {
       console.log(`Congratulations, ${playerName}!`); 
     }
   }
