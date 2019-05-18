@@ -3,9 +3,9 @@
 
 [![Build Status](https://travis-ci.com/enceladus181/project-lvl1-s486.svg?branch=master)](https://travis-ci.com/enceladus181/project-lvl1-s486)
 
-<a href="https://asciinema.org/a/fJhcs7MefCaXDD9VtSjSAt4Pe">asciinema brain-even</a>
+<a href="https://asciinema.org/a/kFT6ExmgIKvAOXa20tC1CC9mm">asciinema brain-even</a>
 
-<a href="https://asciinema.org/a/DWP7RsHLLFC8pN8TzgkhRPKBK">asciinema brain-calc</a>
+<a href="https://asciinema.org/a/7ZbMyTBjdYKhGikAc1ns5gTDl">asciinema brain-calc</a>
 
 <a href="https://asciinema.org/a/CrImWJY4OyGFxHiLW6sjM2FFS">asciinema brain-progression</a>
 
