@@ -13,7 +13,6 @@ parser: babel-eslint
 
 extends:
   - 'airbnb-base'
-  - 'rallycoding'
 
 rules:
   no-console: 0

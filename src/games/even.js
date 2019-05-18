@@ -1,27 +1,17 @@
-import engine from '.';
-import { getRandomNumber } from './apiBrGms';
+import engine from '..';
+import { getRandomNumber } from '../apiBrGms';
 
-const evenGame = () => {
-  const taskExplanationMessage = 'Answer "yes" if number is even; otherwise, answer "no".';
-  const generateGame = () => {
-    const isEvenOrOdd = (number) => {
-      let yesOrNo;
-      if (number % 2 === 0) {
-        yesOrNo = 'yes';
-      } else {
-        yesOrNo = 'no';
-      }
+const taskExplanationMessage = 'Answer "yes" if number is even; otherwise, answer "no".';
+const isEven = number => ((number % 2 === 0) ? 'yes' : 'no');
 
-        return yesOrNo;
-    };
-    const randomNumber = getRandomNumber(0, 21);
-    const question = randomNumber;
-    const rightAnswer = isEvenOrOdd(randomNumber);
+const generateGame = () => {
+  const question = getRandomNumber(0, 21);
+  const rightAnswer = isEven(question);
 
-    return { question, rightAnswer };
-  };
-
-  return engine(taskExplanationMessage, { generateGame });
+  return { question, rightAnswer };
 };
+
+const evenGame = () => (
+  engine(taskExplanationMessage, { generateGame }));
 
 export default evenGame;

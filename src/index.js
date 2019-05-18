@@ -15,8 +15,8 @@ const engine = (taskExplanationMessage, gameData) => {
 		const { question, rightAnswer } = gameData.generateGame();
     console.log(`Question: ${question}`);
     const playerAnswer = getPlayerAnswer();
-
-    if (playerAnswer == rightAnswer) {
+    
+    if (playerAnswer === rightAnswer.toString(10)) {
       console.log('Correct!');
     } else {
       console.log(`'${playerAnswer}' is wrong answer ;(, Correct answer was '${rightAnswer}'.`);
