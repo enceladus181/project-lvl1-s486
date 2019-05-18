@@ -1,4 +1,4 @@
-import { 
+import {
   getPlayerName,
   getPlayerAnswer,
 } from './apiBrGms';
@@ -12,10 +12,10 @@ const engine = (taskExplanationMessage, gameData) => {
   let currentTry = 1;
 
   for (; currentTry <= numOfTries; currentTry += 1) {
-		const { question, rightAnswer } = gameData.generateGame();
+    const { question, rightAnswer } = gameData.generateGame();
     console.log(`Question: ${question}`);
     const playerAnswer = getPlayerAnswer();
-    
+
     if (playerAnswer === rightAnswer.toString(10)) {
       console.log('Correct!');
     } else {
@@ -24,7 +24,7 @@ const engine = (taskExplanationMessage, gameData) => {
       break;
     }
     if (currentTry === 3) {
-      console.log(`Congratulations, ${playerName}!`); 
+      console.log(`Congratulations, ${playerName}!`);
     }
   }
 };
