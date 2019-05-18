@@ -1,6 +1,6 @@
 {
   "name": "project-magzhan-brgms",
-  "version": "1.6.11",
+  "version": "1.6.12",
   "description": "This a brain-games project from Hexlet",
   "files": [
     "dist"
