@@ -20,6 +20,6 @@ const generateGame = () => {
 };
 
 const gcdGame = () => (
-  engine(taskExplanationMessage, { generateGame }));
+  engine(taskExplanationMessage, generateGame));
 
 export default gcdGame;

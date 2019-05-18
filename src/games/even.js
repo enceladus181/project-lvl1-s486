@@ -12,6 +12,6 @@ const generateGame = () => {
 };
 
 const evenGame = () => (
-  engine(taskExplanationMessage, { generateGame }));
+  engine(taskExplanationMessage, generateGame));
 
 export default evenGame;

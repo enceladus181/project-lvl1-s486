@@ -9,10 +9,9 @@ const engine = (taskExplanationMessage, gameData) => {
   console.log(taskExplanationMessage);
   const playerName = getPlayerName();
   const numOfTries = 3;
-  let currentTry = 1;
 
-  for (; currentTry <= numOfTries; currentTry += 1) {
-    const { question, rightAnswer } = gameData.generateGame();
+  for (let currentTry = 1; currentTry <= numOfTries; currentTry += 1) {
+    const { question, rightAnswer } = gameData();
     console.log(`Question: ${question}`);
     const playerAnswer = getPlayerAnswer();
 
@@ -21,12 +20,11 @@ const engine = (taskExplanationMessage, gameData) => {
     } else {
       console.log(`'${playerAnswer}' is wrong answer ;(, Correct answer was '${rightAnswer}'.`);
       console.log(`Let's try again, ${playerName}!`);
-      break;
-    }
-    if (currentTry === 3) {
-      console.log(`Congratulations, ${playerName}!`);
+      return;
     }
   }
+  
+  return console.log(`Congratulations, ${playerName}!`);
 };
 
 export default engine;

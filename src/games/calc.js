@@ -18,6 +18,6 @@ const generateGame = () => {
   return { question, rightAnswer };
 };
 
-const calcGame = () => (engine(taskExplanationMessage, { generateGame }));
+const calcGame = () => (engine(taskExplanationMessage, generateGame));
 
 export default calcGame;

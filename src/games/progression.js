@@ -22,6 +22,6 @@ const generateGame = () => {
 };
 
 const progressionGame = () => (
-  engine(taskExplanationMessage, { generateGame }));
+  engine(taskExplanationMessage, generateGame));
 
 export default progressionGame;

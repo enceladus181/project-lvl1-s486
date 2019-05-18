@@ -25,5 +25,5 @@ const generateGame = () => {
 };
 
 const prime = () => (
-  engine(taskExplanationMessage, { generateGame }));
+  engine(taskExplanationMessage, generateGame));
 export default prime;
