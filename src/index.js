@@ -23,8 +23,7 @@ const engine = (taskExplanationMessage, gameData) => {
       return;
     }
   }
-  
-  return console.log(`Congratulations, ${playerName}!`);
+  console.log(`Congratulations, ${playerName}!`);
 };
 
 export default engine;
