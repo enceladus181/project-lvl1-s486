@@ -1,21 +1,29 @@
-import {
-  getPlayerName,
-  getPlayerAnswer,
-} from './apiBrGms';
+import readlineSync from 'readline-sync';
+
+const getPlayerName = () => {
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+  return name;
+};
+
+const getPlayerAnswer = () => {
+  const answer = readlineSync.question('Your answer: ');
+  return answer;
+};
 
 console.log('Welcome to the Brain Games!');
+const numOfTries = 3;
 
 const engine = (taskExplanationMessage, gameData) => {
   console.log(taskExplanationMessage);
   const playerName = getPlayerName();
-  const numOfTries = 3;
 
   for (let currentTry = 1; currentTry <= numOfTries; currentTry += 1) {
     const { question, rightAnswer } = gameData();
     console.log(`Question: ${question}`);
     const playerAnswer = getPlayerAnswer();
 
-    if (playerAnswer === rightAnswer.toString(10)) {
+    if (playerAnswer === rightAnswer) {
       console.log('Correct!');
     } else {
       console.log(`'${playerAnswer}' is wrong answer ;(, Correct answer was '${rightAnswer}'.`);
