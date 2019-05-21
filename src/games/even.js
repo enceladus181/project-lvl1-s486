@@ -1,5 +1,5 @@
 import engine from '..';
-import { getRandomNumber } from '../utils';
+import getRandomNumber from '../utils';
 
 const taskExplanationMessage = 'Answer "yes" if number is even; otherwise, answer "no".';
 const isEven = number => number % 2 === 0;

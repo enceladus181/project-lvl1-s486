@@ -1,5 +1,5 @@
 import engine from '..';
-import { getRandomNumber } from '../utils';
+import getRandomNumber from '../utils';
 
 const taskExplanationMessage = 'Find the greatest common divisor of given numbers.';
 const getGcdOfTwoNumbers = (a, b) => {

@@ -1,5 +1,5 @@
 import engine from '..';
-import { getRandomNumber } from '../utils';
+import getRandomNumber from '../utils';
 
 const taskExplanationMessage = 'What is the result of the expression?';
 // const getRandomOperator = arr => Math.floor(Math.random() * arr.length);

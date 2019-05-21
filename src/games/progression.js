@@ -1,5 +1,5 @@
 import engine from '..';
-import { getRandomNumber } from '../utils';
+import getRandomNumber from '../utils';
 
 const taskExplanationMessage = 'What number is missing in the progression?';
 const generateGame = () => {
