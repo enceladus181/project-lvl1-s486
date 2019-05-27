@@ -33,4 +33,3 @@ const prime = () => (
   engine(taskExplanationMessage, generateGame));
 
 export default prime;
- 

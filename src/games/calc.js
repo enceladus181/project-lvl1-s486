@@ -9,7 +9,7 @@ const generateGame = () => {
   const operand2 = getRandomNumber(0, 21);
   const operatorIndex = getRandomNumber(0, operators.length);
   let result;
-  
+
   switch (operatorIndex) {
     case 0:
       result = operand1 - operand2;
