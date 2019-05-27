@@ -11,10 +11,10 @@ const getPlayerAnswer = () => {
   return answer;
 };
 
-console.log('Welcome to the Brain Games!');
 const numOfTries = 3;
 
 const engine = (taskExplanationMessage, gameData) => {
+  console.log('Welcome to the Brain Games!');
   console.log(taskExplanationMessage);
   const playerName = getPlayerName();
 

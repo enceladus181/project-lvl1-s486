@@ -2,14 +2,17 @@ import engine from '..';
 import getRandomNumber from '../utils';
 
 const taskExplanationMessage = 'What number is missing in the progression?';
+const sizeOfProgression = 10;
+
 const generateGame = () => {
   const arr = [];
-  let firstElementOfProgression = getRandomNumber(1, 10);
+  const firstElementOfProgression = 1;
   const difference = getRandomNumber(1, 20);
-  const sizeOfProgression = 10;
+  let currentElementOfProgression = firstElementOfProgression;
+
   for (let i = 0; i < sizeOfProgression; i += 1) {
-    arr.push(firstElementOfProgression);
-    firstElementOfProgression += difference;
+    arr.push(currentElementOfProgression);
+    currentElementOfProgression += difference;
   }
 
   const hiddenNumPosition = getRandomNumber(0, arr.length);

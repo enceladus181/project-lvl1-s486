@@ -6,10 +6,15 @@ const isPrimeInteger = (num) => {
   if (num <= 1) {
     return false;
   }
-  if (num === 2) {
+  if (num <= 3) {
     return true;
   }
-  for (let i = 2; i < num / 2; i += 1) {
+
+  if (num % 2 === 0 || num % 3 === 0) {
+    return false;
+  }
+
+  for (let i = 5; i < num / 2; i += 1) {
     if (num % i === 0) {
       return false;
     }
@@ -18,7 +23,7 @@ const isPrimeInteger = (num) => {
 };
 
 const generateGame = () => {
-  const numberToCheck = getRandomNumber(1, 1000);
+  const numberToCheck = getRandomNumber(-100, 1000);
   const question = numberToCheck;
   const rightAnswer = (isPrimeInteger(numberToCheck)) ? 'yes' : 'no';
   return { question, rightAnswer };
@@ -28,3 +33,4 @@ const prime = () => (
   engine(taskExplanationMessage, generateGame));
 
 export default prime;
+ 
